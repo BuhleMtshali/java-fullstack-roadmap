@@ -9,9 +9,16 @@ public class HelloWorld{
 
         //LOOPING THROUGH THE STUDENT ARRAY
         for(String student : students){
-            System.out.println("Student found: " + student);
-            found = true;
-            break;
+            if(student.equals(name)){
+                System.out.println("Student found: " + student);
+                found = true;
+                break;
+            }
+        }
+
+        if(!found){
+            System.out.println("Student not found");
         }
     }
+    
 }
