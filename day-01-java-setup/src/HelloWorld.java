@@ -1,5 +1,9 @@
 public class HelloWorld{
     public static void main(String[] args) {
-        printStudent("Buhle")
+        printStudent("Buhle");
+    }
+
+    public static void printStudent(String name){
+
     }
 }
