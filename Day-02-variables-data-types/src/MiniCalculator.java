@@ -57,6 +57,8 @@ public class MiniCalculator {
                     break;
             }
 
+            input.nextLine();
+
             //ASKING IF THE USER WANTS TO RERUN THE PROGRAM
             System.out.print("\n Wanna run another calculation? (yes/no): ");
             String answer = input.nextLine().trim().toLowerCase();
