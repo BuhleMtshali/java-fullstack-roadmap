@@ -44,7 +44,7 @@ public class MiniCalculator {
 
                 case '/':
                     if(secondNumber != 0){
-                        output = firstNumber * secondNumber;
+                        output = firstNumber / secondNumber;
                         System.out.println("Result: " + output);
                         break;
                     } else {
