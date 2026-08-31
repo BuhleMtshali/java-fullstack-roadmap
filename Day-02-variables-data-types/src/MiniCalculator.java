@@ -18,14 +18,44 @@ public class MiniCalculator {
             Double firstNumber = input.nextDouble();
 
             //GETTING THE OPERATOR
-            System.out.print("Choose an operator (+, -, *, x, /): ");
+            System.out.print("Choose an operator (+, -, *, /): ");
             char operator = input.next().charAt(0);
 
             //GETTING THE FINAL VALUE
             System.out.print("Enter your second value: ");
             Double secondNumber = input.nextDouble();
 
+            //STARTING THE SWITCH STATEMENT
+            switch (operator) {
+                case '+':
+                    output = firstNumber + secondNumber;
+                    System.out.println("Result: " + output);
+                    break;
+                
+                case '-':
+                    output = firstNumber - secondNumber;
+                    System.out.println("Result: " + output);
+                    break;
 
+                case '*':
+                    output = firstNumber * secondNumber;
+                    System.out.println("Result: " + output);
+                    break;
+
+                case '/':
+                    if(secondNumber != 0){
+                        output = firstNumber * secondNumber;
+                        System.out.println("Result: " + output);
+                        break;
+                    } else {
+                       System.out.println("We cannot devide by 0"); 
+                    }
+                    break;
+                    
+                default:
+                    System.out.println("❌ Invalid operator!");
+                    break;
+            }
 
             //ASKING IF THE USER WANTS TO RERUN THE PROGRAM
             System.out.print("\n Wanna run another calculation? (yes/no): ");
