@@ -4,6 +4,7 @@ public class HelloWorld{
     }
 
     public static void printStudent(String name){
+        //CREATING AN ARRAY FOR THE NAMES
         String[] students = {"Kathy", "James", "Lebo"};
         boolean found = false;
 
