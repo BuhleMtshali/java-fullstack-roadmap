@@ -9,7 +9,22 @@ public class MiniCalculator {
 
         //STARTING THE WHILE LOOP
         while (true) {
-            System.out.print("loop started");
+            //DECLARING THE OUTPUT
+            Double output;
+
+
+            //GETTING FIRST NUMBER
+            System.out.print("\n 1️⃣ Enter your first number: ");
+            Double firstNumber = input.nextDouble();
+
+            //GETTING THE OPERATOR
+            System.out.print("Choose an operator (+, -, *, x, /): ");
+            char operator = input.next().charAt(0);
+
+            //GETTING THE FINAL VALUE
+            System.out.print("Enter your second value: ");
+            Double secondNumber = input.nextDouble();
+
 
 
             //ASKING IF THE USER WANTS TO RERUN THE PROGRAM
