@@ -30,7 +30,7 @@ public class UtilityBill {
             double totalBill = 0.0;
             String category = "";
 
-
+            input.nextLine();
             //STARTING THE CALCULATIONS
 
             //1. FIRST ITS FOR THE COMMERCIAL USECASE
