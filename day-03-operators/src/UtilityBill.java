@@ -2,8 +2,6 @@
 import java.util.Scanner;
 
 
-
-
 public class UtilityBill {
     public static void main(String[] args) throws Exception {
         
