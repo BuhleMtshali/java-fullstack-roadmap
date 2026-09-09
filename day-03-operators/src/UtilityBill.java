@@ -24,7 +24,23 @@ public class UtilityBill {
             System.out.print("🕹️ Enter connection type (1 for Domestic, 2 for commercial): ");
             int type = input.nextInt();
 
+            //NOW LETS CREATE THE BILL AND CATEGORY VARIABLES
+            Double totalBill = 0.0;
+            String category = "";
 
+
+            //STARTING THE CALCULATIONS
+
+            //1. FIRST ITS FOR THE COMMERCIAL USECASE
+            if(type == 1){
+                category = "DOMESTIC";
+
+                //FIRST CALCULATING IF THE USER CONSUMED LESS/EQUALL TO 100 UNITS
+                if(units <= 100){
+                    //FIRST 100 UNITS ARE CALCULATED AT R3 PER UNIT
+                    totalBill = units * 3.0;
+                }
+            }
 
 
             //CLOSING THE LOOP
