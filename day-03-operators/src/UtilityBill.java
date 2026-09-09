@@ -39,6 +39,19 @@ public class UtilityBill {
                 if(units <= 100){
                     //FIRST 100 UNITS ARE CALCULATED AT R3 PER UNIT
                     totalBill = units * 3.0;
+
+                    //IF THE USER USED MORE THAN 100 BUT LESS THAN 200
+                } else if(units <= 200){
+                    //so the first 100 units calculated at R3 then we say units minus the 100 
+                    //we already calculated and the remaining units at R4
+                    totalBill = (100 * 3.0) + ((units - 100) * 4.0);
+                } else {
+                    //if the user used more than 200
+                    //we first calculate the first 100 at R3
+                    //we calculate the second 100 at R4
+                    //then from the units we minus the 200 we already calculated
+                    //the remaining are calculated at R5 per unit left
+                    totalBill = (100 * 3.0) + (100 * 4.0) + ((units - 200) * 5.0);
                 }
             }
 
