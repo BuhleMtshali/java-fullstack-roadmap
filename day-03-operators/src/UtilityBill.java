@@ -15,7 +15,7 @@ public class UtilityBill {
         while (true) {
 
             //GREETING MESSAGE
-            System.out.print("========== 🧾 UTILITY BILL CALCULATOR 💡 =============");
+            System.out.println("\n========== 🧾 UTILITY BILL CALCULATOR 💡 =============");
 
             //GETTING THE USERS CONSUMES UNITS
             System.out.print("💡 Enter units consumed (kWh): ");
