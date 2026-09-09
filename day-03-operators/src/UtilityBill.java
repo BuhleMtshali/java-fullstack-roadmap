@@ -11,8 +11,18 @@ public class UtilityBill {
 
         //STARTING THE WHILE LOOP TO REASK IF THEY WANT TO RECALCULATE THE BILL
         while (true) {
-            System.out.print("Loop is running...");
 
+            //GREETING MESSAGE
+            System.out.print("========== 🧾 UTILITY BILL CALCULATOR 💡 =============");
+
+            //GETTING THE USERS CONSUMES UNITS
+            System.out.print("💡 Enter units consumed (kWh): ");
+            Double units = input.nextDouble();
+
+
+            //CHECKING IF THIS WAS DOMESTIC CONSUMPTION OR COMMERCIAL
+            System.out.print("🕹️ Enter connection type (1 for Domestic, 2 for commercial): ");
+            int type = input.nextInt();
 
 
 
