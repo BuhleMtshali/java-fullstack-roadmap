@@ -1,7 +1,7 @@
 //IMPORT THE UTILITY SCANNNER
 import java.util.Scanner;
 
-import javax.print.DocFlavor.INPUT_STREAM;
+
 
 
 public class UtilityBill {
@@ -27,7 +27,7 @@ public class UtilityBill {
             int type = input.nextInt();
 
             //NOW LETS CREATE THE BILL AND CATEGORY VARIABLES
-            Double totalBill = 0.0;
+            double totalBill = 0.0;
             String category = "";
 
 
