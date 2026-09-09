@@ -1,6 +1,8 @@
 //IMPORT THE UTILITY SCANNNER
 import java.util.Scanner;
 
+import javax.print.DocFlavor.INPUT_STREAM;
+
 
 public class UtilityBill {
     public static void main(String[] args) throws Exception {
@@ -53,6 +55,27 @@ public class UtilityBill {
                     //the remaining are calculated at R5 per unit left
                     totalBill = (100 * 3.0) + (100 * 4.0) + ((units - 200) * 5.0);
                 }
+            //NOW WE LOOKING AT TYPE 2 AT COMMERCIAL USE
+            } else if(type == 2){
+                category = "Commercial";
+
+                //same as above, first 100 units calculated at R5 per unit
+                if(units <= 100){
+                    totalBill = units * 5.0;
+
+                //IF MORE THAN 100 BUT LESS THAN 200
+                }else if(units <= 200){
+                    //first 100 units at R5, left over units R6 per unit
+                    totalBill = (100 * 5.0) + ((units -  100) * 6.0);
+                } else{
+                    //if user used more than 200 units. each unit after 200 is R8 per unit
+                    totalBill = (100 * 5.0) + (100 * 6.0) + ((units - 200) * 8.0);
+                }
+            //if the user inputted an invalid connection type
+            } else {
+                System.out.println("\n ------ ⛔️ INVALID CONNECTION TYPE ⛔️ -----");
+                input.close();
+                return;
             }
 
 
