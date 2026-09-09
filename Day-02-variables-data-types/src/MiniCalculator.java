@@ -56,7 +56,8 @@ public class MiniCalculator {
                     System.out.println("❌ Invalid operator!");
                     break;
             }
-
+            
+            //CLEAR THE INPUT FIELD
             input.nextLine();
 
             //ASKING IF THE USER WANTS TO RERUN THE PROGRAM
