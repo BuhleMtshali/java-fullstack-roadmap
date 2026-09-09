@@ -78,6 +78,12 @@ public class UtilityBill {
                 return;
             }
 
+            //PRINTING THE BILL STATEMENT
+            System.out.println("\n----- 🧾 Bill Summary -----");
+            System.out.println("🏡 Connection Type: " + category);
+            System.out.println("🧮 Units Consumed:  " + units + " kWh");
+            System.out.printf("======== 💡Total Amount Due 💵 : R%.2f\n", totalBill);
+
 
             //CLOSING THE LOOP
             //ASKING THE USER IF THEY WANT TO RERUN THE LOOP
