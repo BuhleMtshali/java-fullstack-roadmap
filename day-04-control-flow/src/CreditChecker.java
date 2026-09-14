@@ -32,10 +32,11 @@ public class CreditChecker {
             //STARTING CONTROL FLOW STATEMENTS
             if(age >= 18 && creditScore >= 650 && loanPercentage <= 30){
                 System.out.println("✅ Congratulations " + name + " your loan has been approved!");
+            } else if (age >= 18 && creditScore >= 650 && loanAmount >= 30){
+                System.out.println("⛔️ Unfortunately your loan application has been denied due to the fact that the requested loan amount of: R" + loanAmount + " is " + loanPercentage + "% and for a loan to be approved, the loan amount has to 30% or less than your salary!" );
+            }else {
+                System.out.print("🆘 Loan denied, your did not meet the requirements this time");
             }
-
-
-
 
             //CLOSING THE LOOP
             System.out.print("\n 🕯️ Wanna check again? (yes/no): ");
