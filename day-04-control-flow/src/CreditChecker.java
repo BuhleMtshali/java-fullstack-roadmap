@@ -9,8 +9,11 @@ public class CreditChecker {
 
         //CREATING A WHILE LOOP
         while (true) {
-            System.out.print("How much is Gross salary income before taxes and deductions (R):");
-            double grossSalary = input.nextDouble();
+            System.out.print("What is your name: ");
+            String name = input.nextLine();
+
+            System.out.print("What is your age: ");
+            int age = input.nextInt();
 
             System.out.print("How much is your salary after deductions (R): ");
             double totalSalary = input.nextDouble();
@@ -20,6 +23,17 @@ public class CreditChecker {
 
             System.out.print("Enter the loan amount you require (R): ");
             double loanAmount = input.nextDouble();
+
+            double loanPercentage = loanAmount / totalSalary * 100;
+
+            //CLEARING THE INPUT FIELD
+            input.nextLine();
+
+            //STARTING CONTROL FLOW STATEMENTS
+            if(age >= 18 && creditScore >= 650 && loanPercentage <= 30){
+                System.out.println("✅ Congratulations " + name + " your loan has been approved!");
+            }
+
 
 
 
