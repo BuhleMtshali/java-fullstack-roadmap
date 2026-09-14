@@ -9,8 +9,17 @@ public class CreditChecker {
 
         //CREATING A WHILE LOOP
         while (true) {
-            System.out.println("loop is running...");
+            System.out.print("How much is Gross salary income before taxes and deductions (R):");
+            double grossSalary = input.nextDouble();
 
+            System.out.print("How much is your salary after deductions (R): ");
+            double totalSalary = input.nextDouble();
+
+            System.out.print("What is your credit score: ");
+            int creditScore = input.nextInt();
+
+            System.out.print("Enter the loan amount you require (R): ");
+            double loanAmount = input.nextDouble();
 
 
 
